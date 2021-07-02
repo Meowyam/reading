@@ -1,0 +1,116 @@
+"Controlled Natural Languages (CNLs) can be considered as a balance
+between the expressiveness of the natural languages and the need for a for-
+mal representation that can be handled by a computer. A CNL is an engineered
+subset of natural languages whose grammar and vocabulary have been restricted
+in a systematic way in order to reduce both ambiguity and complexity of full
+natural languages" (from the story generation below)
+
+---yes 1: tax fraud
+
+they used a tagged controlled dataset
+tagging allows the system to report
+the percentage of false positives or negatives
+
+their cnl design:
+- patterns between different years of assessment
+- include (i) temporal notions (ii) mathematical expressions (iii) means of referring to aggregated values 
+- language: filters (individuals, companies, etc.); time-based sets; conditions (checks to flag cases, combined using booleans); reports (idenitfy fields: eg. id, age, etc. using regular natural language)
+
+evaluated by maltese irs (ird)
+
+use standard runtime verification tool, Larva [CPS09], to process the data efficiently Rules take the form of: event | condition → action
+
+--- no 2: Reasoning in Attempto Controlled English:
+Non-monotonicity
+- extended the Attempto Reasoner RACE by non-monotonic reasoning 
+- they used prolog.
+
+--- no 3: Bootstrapping a Runyankore CNL from an isiZulu CNL
+bootstrapped using gf
+agglutinated language
+
+--- maybe yes 4: Statistically-Guided Controlled Language Authoring
+use of contextual word prediction,
+determining its potential to enhance controlled language authoring
+potential of using in-domain contextual predictions to generate productive suggestions for the creation of acceptable controlled texts
+*they have graphs*
+
+---no 5: A Speech Interface to the PENGASP System
+
+---yes 6: Asking Data in a Controlled Way with Ask Data Anything NQL
+Ask Data Anything. a web application for interacting with data using
+natural language queries and a server application for processing the natural
+language query and executing it 
+a UI together with a natural query interface
+user can easily integrateontologies written using W3C standard technologies intothe system and use them to enhance the data
+offers more than what presented in paper, for example: simple access to semantic
+tagging, synonyms and other features given by the ontology
+http://docs.cognitum.eu/AskDataAnything2015/
+
+--- no 7: To What Extent Does Text Simplification Entail a More Optimized Comprehension in Human-Oriented CNLs?
+
+psycholinguistic testing to optimize pilot comprehension
+
+-- no but cool 8: Using CNL for Knowledge Elicitation and Exchange Across Story Generation Systems
+
+(I'm summarising it because it's cool)
+
+Gervás, a story generator algorithm 
+Minstrel was a story generation system that told stories about King Arthur
+and his Knights of the Round Table
+Mexica was a computer model designed to generate short stories about
+the early inhabitants of Mexico
+StoryBricks
+
+STellA (Story Telling Algorithm) is a story generation system that con-
+trols and chooses states in a non-deterministically generated space of partial
+stories until it finds a satisfactory simulation of events that is rendered as a
+story.
+Knowledge Representation in STellA
+ snapshots and actions. Snapshots are states of the world.
+Actions contain information about what led from the previous
+state to the current one
+story = {(s1 , [a1,1 , a1,2 , . . . , a1,n ]), . . . , (sz , [az,1 , az,2 , . . . , az,n )}
+
+--- yes 9 Towards a High-Level Controlled Language for Legal Sources on the Semantic Web
+hCL is designed to identify the overall semantic structures of the rule statements expressed in legal documents 
+analysis and annotation of legal sources using structured anno-
+tations, which is our high-level CL (hCL), on the source text. This hCL leaves
+the source text in situ.
+
+--- no 10 The Controlled Natural Language of Randall Munroe’s Thing Explainer
+Randall Munroe’s Thing Explainer uses only the 1’000 most often used words of the English language together with drawn pictures to explain complicated things
+
+*interesting:*
+"This seems to point to a general problem of such languages with a heavily restricted vocabulary: Writers are forced to circumscribe existing concepts instead of naming them or to involve rough analogies, which can lead to a language that even less precise than full natural language.*
+
+--- yes partly 11 Human-Robot Interaction in a Shopping Mall:
+A CNL Approach
+
+construct knowledge bases
+representing general/specific static/dynamic knowledge about shopping
+malls, to be used in conjunction with the CNLs. We show an application
+of our framework with a humanoid robot.
+
+specialized domains for human-robot interactions (e.g., in a shopping mall),
+controlled natural languages (CNLs) can be used to eliminate those ambiguities
+and allow sentences in a well-defined syntax
+
+use Sparql. Sparql is a query language for querying ontologies in RDF or OWL. Every
+Sparql query starts with a SELECT clause for specifying the variables and
+continues with WHERE clause for specifying the properties of those. Obvi-
+ously, it would be logical to use an outside tool for constructing these types
+of queries as well.
+
+*they have syntax trees*
+
+-- yes 12 Multilingual Database Access in the Query Converter
+
+software that provides natural language access to databases
+qconv, Query Converter based on a cnl (yaql) used for sparql queries
+
+-- no but cool 13 The Role of CNL and AMR in Scalable Abstractive Summarization for Multilingual Media Monitoring
+summarized AMR graphs would have to be mapped to the abstract syntax trees
+(AST) in GF 
+they cannot do this yet
+
