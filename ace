@@ -106,3 +106,72 @@ if CONDITIONS then CONSEQUENCES
 'no': negation AND quantifier
 'there is a': existential quantification ; 'a/an': implicit existence
 'there is no'
+
+~~ vocabulary ~~
+
+can associate word and synonym
+
+have to determine gender of nouns(masc/fem/neuter)
+
+proper nouns with 'the' and plural names (The Netherlnads) isn't allowed
+unless entered like compound proper noun in lexicon
+
+can store quoted strings: has to occur next to noun phrase
+eg. the cat 'Stinky Bob'
+
+can have dynamic nouns NOT defined in lexicon in APPOSITIVE position
+
+~verbs
+"to be" is predefined
+whatever else you add to lexicon yourself
+can have phrasal verbs
+
+~ summary
+each sentence is parsed deterministically and thus assigned one unambiguous interpretation
+ace creates a paraphrase that has interpretations/additions in brackets
+when remove brackets, paraphrase is valid ace text
+
+binding hierarchy: 
+Negation > Conjunction > Disjunction > Implication
+can override with commas
+or split into different sentences
+
+Right Association
+eg.
+Input: The customer enters the code of a card that is invalid.
+Paraphrase: The customer enters the code of {a card that is invalid}.
+
+What if Attempto does not Accept the User Input?
+error message
+Misspelled
+or unknown words are listed for your convenience. If there are syntax errors, the first erroneous sentence is displayed.
+
+
+___ hacker news: https://news.ycombinator.com/item?id=20950126 __
+
+happened in 11th century with Sanskrit: subset to make precise arguments (Navya-Nyāya/“Shastric Sanskrit”)`
+bell labs fase: http://digitalcollections.library.cmu.edu/awweb/awarchive?type=file&item=361607 "Fundamentally Analyzable Simplified English"
+
+"
+
+	
+droithomme on Sept 12, 2019 [–]
+
+This seems similar to Applescript. Someone wants to make a precise language that looks like English and can be read and written by non-programmers. Ultimately you get the reading part, sort of, but writing is harder. You end up with very subtle and precise rules in the grammar which are not as easily inferred correctly as with many common programming languages. Just writing sentences that you think should be correct won't work. You need to fully understand the programming language. So you're back at requiring programmers to work with it.
+
+	
+iainmerrick on Sept 12, 2019 [–]
+
+It might be great to have tool-assisted writing, where you write naturally and the computer says “do you mean: [pedantic unambiguous version]”.
+The main risk would be people blindly accepting corrections that actually change the meaning -- just like any other autocorrection system. I’m not sure how to mitigate against that.
+
+
+	
+joaojeronimo on Sept 12, 2019 [–]
+
+Newspeak!
+
+	
+trhway on Sept 12, 2019 [–]
+
+Actually legalese comes to mind. Therein and hereto ... I mean the same purported goal to disambiguate and precisely specify. Because of complexity of the result it is hard to say whether that goal is achieved or not :)"
