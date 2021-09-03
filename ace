@@ -1,0 +1,108 @@
+__ace manual__http://attempto.ifi.uzh.ch/site/pubs/papers/ace3manual.pdf
+
+ace: attempto controlled english
+- desigend to write specifications
+• to support the writing of precise specifications,
+• to reduce ambiguity and vagueness inherent in full natural language,
+• to encourage domain specialists to deliberately choose a clear and unambiguous writing
+style so that readers of a specification understand it in the same way as the writer,
+• to make specifications computer processable,
+• to render specifications unambiguously translatable into formal specification languages,
+particularly into first-order logic,
+• to make specifications executable.
+
+content words (user-defined, domain-specific). use lexical editor to define or import lexicon
+
+function words: predefined (conjunctions etc.)
+
+composite sentences built from simple sentences with:
+and/or
+
+If verbs are negated as in
+A customer does not insert a card and a code.
+the negated verb will be inserted to yield the paraphrase
+A customer does not insert a card and [does not insert] a code
+
+commas override binding order
+A customer inserts a VisaCard or a MasterCard, and a code.
+means that the customer inserts a VisaCard and a code or a MasterCard and a code.
+
+there's subordination (relative sentences: who/which/theat, and if-then)
+
+there's quantification
+ace no passive voice
+"for every *** there is **"
+
+there's negation
+
+
+~ queries ~
+yes/no
+query words: who/which/what/how/when
+-- cannot query the verb
+
+~~ constraining ambiguity ~~
+repeat 'that'
+
+prepositional phrase always modifies verb:
+The customer inserts a card with a code.
+we get the paraphrase
+The customer {inserts a card with a code}
+
+to clarify use 'that' for (card that has code) or 'and', for custoemr inserts card AND a code
+
+anaphoric references: use 'the' or pronouns ('it')
+pronouns /articles replaced with most recent accessible noun phrase that agrees with gender & number
+
+~~ each ace sentence has truth value ~~
+
+verbs: events or states
+textual order is temporal order
+
+can only detect explicit logical contradictions, eg.
+cat is grey
+cat is not grey ==> contradiction
+BUT
+cat is grey
+cat is white, have to define that:
+every cat that is grey is not white
+
+******
+
+grammar
+
+sentence: words and phrases
+
+vs natural language:
+
+verbs only
+- no passive voice
+- no imperatives
+- only simple present tense
+- only third person singular
+
+no plural noun phrases and plural verbs
+no modal verbs (may/must), no intensional verbs (hope/know/believe)
+common nouns must have determiner
+
+appositions: noun phrases next to each other, eg.
+the cat Soseki
+
+~ coordination ~
+'and': first one and the the other
+
+'or': inclusive disjunction: one or the other or both
+
+if exclusive disjunction have to be like:
+*The book is available and is not checked out or the book is not available and is checked
+out*
+
+~ if-then
+
+if CONDITIONS then CONSEQUENCES
+
+~ quantifiers
+'for every': universal quantification
+'no': negation AND quantifier
+'there is a': existential quantification ; 'a/an': implicit existence
+'there is no'
